@@ -8,7 +8,7 @@ import { ApolloProvider } from '@apollo/client';
 function App() {
   return (
     <ApolloProvider client={client}>
-      <div className="App">
+      <div>
         <h2>Students by Graph QL 🚀</h2>
         <Students />
       </div>

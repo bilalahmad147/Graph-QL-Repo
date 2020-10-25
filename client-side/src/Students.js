@@ -17,15 +17,15 @@ function Students() {
 
     const { loading, error, data } = useQuery(STU_INFO);
     if (loading) return <h2>Loading...</h2>;
-    if (error) return <h2>Error :(</h2>;
+    if (error) return <h2>Error </h2>;
 
     const { Students } = data;
     return (
         <div>
             <h2>Students List</h2>
-            <table Border="2" width="1350">
+            <table Border="2" width="500">
                 {
-                    Students.map((stu, ind) => {
+                    Students.map((stu) => {
                         return (
                             <tr>
                                 <td>{stu.id}</td>
